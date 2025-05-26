@@ -16,10 +16,10 @@ async function displayUser(username) {
     const data = await response.json();
     console.log(data);
 
-    // Se actualiza y se utilizan los backsticks para interpolar variables 
-    $n.textContent = `${data.name}`;
-    $b.textContent = `${data.blog}`;
-    $l.textContent = `${data.location}`;
+    // Se actualiza para evitar que la interfaz muestre un espacio en blanco o null
+    $n.textContent = data.name || 'Nombre no disponible';
+    $b.textContent = data.blog || 'Blog no disponible';
+    $l.textContent = data.location || 'Ubicación no disponible';
   } catch (err) {
     handleError(err);
   }
@@ -28,7 +28,7 @@ async function displayUser(username) {
 function handleError(err) {
   console.log('OH NO!');
   console.log(err);
-  n.textContent = `Algo salió mal: ${err.message}` // Se agrega el .message
+  $n.textContent = `Algo salió mal: ${err.message}` // Se agrega el .message
 }
 
 // Llamamos a la función con el nombre de usuario de GitHub
