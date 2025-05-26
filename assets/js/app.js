@@ -2,7 +2,7 @@ const baseEndpoint = 'https://api.github.com';
 const usersEndpoint = `${baseEndpoint}/users`;
 // Correción de los selectores que deben incluir el símbolo correspondiente.
 const $n = document.querySelector('.name'); // Antes decía 'name', que no es válido
-const $b = document.querySelector('#blog');
+const $b = document.querySelector('.blog'); // Se quita el # y se cambia con . para mejor funcionamiento.
 const $l = document.querySelector('.location'); // en HTML no estaba, deberías agregar este <p> también
 
 // Se agrega async a la función para poder usar await.
