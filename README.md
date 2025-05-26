@@ -16,14 +16,23 @@ Aplicar conocimientos de **HTML**, **CSS** y **JavaScript** para realizar una pe
 ## 🧩 Estructura del proyecto
 
 /codigo-otros-1-jorgearagon/
+
 │
+
 ├── index.html # Estructura HTML de la página
+
 ├── README.md # Este archivo con la descripción del proyecto
+
 └── assets/
+
 ├── css/
+
 │ └── styles.css # Estilos personalizados
+
 └── js/
+
 └── app.js # Código JavaScript que consume la API
+
 
 
 ## 📦 Funcionalidad
