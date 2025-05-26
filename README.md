@@ -43,5 +43,7 @@ Aplicar conocimientos de **HTML**, **CSS** y **JavaScript** para realizar una pe
 3. Verás cargada la información del usuario de GitHub por defecto (stolinski).
 
 🛠️ Autor
+
 Jorge Daniel Aragón
+
 Proyecto realizado como parte del bootcamp de Generation México.
